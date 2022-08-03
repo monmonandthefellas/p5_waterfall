@@ -1,0 +1,33 @@
+body {padding: 0; margin: 0; overflow: hidden;}
+
+.container {
+  display: block;
+  background-color: transparent;
+  width: 800px;
+  height: 50px;
+  position: absolute;
+  top: 42%;
+  left: 100%;
+  margin-left: -400px;
+  margin-top: -25px;
+  color: white;
+  margin: 0 auto;
+  font-size: 30px;
+  font-family: Arial;
+  display: block;
+  animation: glow 6s linear forwards, scroll 6s linear forwards;
+}
+
+@keyframes glow {
+  0% {color: transparent; }
+  35% {color: white; }
+  65% {color: white; }
+  75% {color: transparent; }
+  100% {color: transparent; }
+  
+}
+
+@keyframes scroll {
+  0% {left: 100%;}
+  100% {left: -100%;}
+}
